@@ -1,0 +1,16 @@
+{
+  "source": "LIVE",
+  "responses": {
+    "threshold_reason": "The selected threshold is defensible because it balances the cost of missed payment risks with the available capacity to review flagged cases. It should be supported by the observed OOF results rather than chosen arbitrarily.",
+    "cost_capacity_tradeoff": "A lower threshold identifies more individuals at risk of missing monthly payments, but increases the number of cases requiring review. A higher threshold reduces review workload but may miss more risky cases. The final choice should balance expected financial loss and operational capacity.",
+    "regional_gap": "Differences in false positive rates between regions may indicate unequal model performance. The regional FPR gap should be examined using the actual validation results. Further review is needed to determine whether differences come from sample sizes, data quality, or model behavior.",
+    "limitations": "The threshold was selected using OOF development predictions, so performance estimates may still be optimistic. OOF coverage may exclude early observations. Predicted probabilities may not be perfectly calibrated, and the simplified cost and capacity policy may not represent real financial decisions.",
+    "why_accuracy_misleads": "Accuracy can be misleading under class imbalance because a model may predict that most individuals will pay on time and achieve high accuracy while failing to identify individuals at risk of missing payments.",
+    "why_oof": "OOF predictions are used for threshold selection because they are generated for observations not used to fit the corresponding model. Training predictions may be overly optimistic, while challenge data must remain independent for final evaluation."
+  },
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
