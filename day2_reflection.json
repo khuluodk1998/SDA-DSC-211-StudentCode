@@ -1,0 +1,14 @@
+{
+  "responses": {
+    "leak_example": "An example of data leakage is the actual payment date. This information is unavailable when predicting payment risk before the monthly bill is due.",
+    "split_reason": "Time ordering ensures that past data is used to predict future payments. Customer separation prevents the same customer from appearing in both training and validation. The strict 90-day maturity rule ensures that payment outcomes have enough time to become fully observable.",
+    "observed_gap": "The validation table should be used to compare two numerical performance gaps between the models. These differences do not prove universal superiority because results depend on the dataset, time period, and evaluation method.",
+    "imputer_reason": "Imputation is learned only from training data to prevent information leakage from validation data. The inner stopping set controls when model training should stop to reduce overfitting without using the final comparison set.",
+    "limitations": "A limited search budget means that only a small number of hyperparameter combinations can be tested. OOF predictions may not cover every observation, and results can depend on the selected folds."
+  },
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
