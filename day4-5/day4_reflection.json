@@ -1,0 +1,15 @@
+{
+  "responses": {
+    "global_local": "Global explanations describe which features influence payment-risk predictions across the dataset. Local explanations describe how individual features contribute to one person's predicted risk. Global importance does not mean that the same feature dominates every prediction.",
+    "output_units": "SHAP values explain model outputs relative to a background reference. Their units depend on the explainer configuration: they may represent raw model scores, log-odds, or probability differences. The actual output unit and background dataset must be verified before interpreting the values.",
+    "reason_limits": "Reason statements summarize the main factors associated with a prediction, but they do not establish causation. Correlated features can share or redistribute importance, so their individual contributions should not be treated as independent causal effects.",
+    "calibration_evidence": "Calibration should be evaluated on the separate evaluation period by comparing predicted risk with observed late-payment rates. The calibration results and sample denominators are needed to determine whether predicted probabilities match observed outcomes.",
+    "stability": "The stability interval describes variation under the specific resampling procedure used in the experiment. It does not automatically include future economic changes, new customer populations, data drift, or uncertainty outside the evaluated sample.",
+    "review_capacity": "The review zone identifies cases requiring additional assessment rather than an automatic decision. A wider review zone increases the number of cases requiring manual review and may exceed period capacity. Its actual impact should be calculated using the number of review-zone cases divided by the available review capacity."
+  },
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "no_automatic_grade": true
+  }
+}
